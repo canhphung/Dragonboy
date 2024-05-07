@@ -2,35 +2,35 @@ using System;
 
 public class GamePad
 {
-	private int xC;
+	internal int xC;
 
-	private int yC;
+	internal int yC;
 
-	private int xM;
+	internal int xM;
 
-	private int yM;
+	internal int yM;
 
-	private int xMLast;
+	internal int xMLast;
 
-	private int yMLast;
+	internal int yMLast;
 
-	private int R;
+	internal int R;
 
-	private int r;
+	internal int r;
 
-	private int d;
+	internal int d;
 
-	private int xTemp;
+	internal int xTemp;
 
-	private int yTemp;
+	internal int yTemp;
 
-	private int deltaX;
+	internal int deltaX;
 
-	private int deltaY;
+	internal int deltaY;
 
-	private int delta;
+	internal int delta;
 
-	private int angle;
+	internal int angle;
 
 	public int xZone;
 
@@ -40,7 +40,7 @@ public class GamePad
 
 	public int hZone;
 
-	private bool isGamePad;
+	internal bool isGamePad;
 
 	public bool isSmallGamePad;
 
@@ -110,9 +110,9 @@ public class GamePad
 				isGamePad = true;
 				deltaX = GameCanvas.px - xC;
 				deltaY = GameCanvas.py - yC;
-				delta = Math.pow(deltaX, 2) + Math.pow(deltaY, 2);
+				delta = Math2.pow(deltaX, 2) + Math2.pow(deltaY, 2);
 				d = Res.sqrt(delta);
-				if (Math.abs(deltaX) <= 4 && Math.abs(deltaY) <= 4)
+				if (Math2.abs(deltaX) <= 4 && Math2.abs(deltaY) <= 4)
 					return;
 				angle = Res.angle(deltaX, deltaY);
 				if (!GameCanvas.isPointerHoldIn(xC - R, yC - R, 2 * R, 2 * R))
@@ -212,7 +212,7 @@ public class GamePad
 		}
 	}
 
-	private bool checkPointerMove(int distance)
+	internal bool checkPointerMove(int distance)
 	{
 		if (GameScr.isAnalog == 0)
 			return false;
@@ -234,7 +234,7 @@ public class GamePad
 		return true;
 	}
 
-	private void resetHold()
+	internal void resetHold()
 	{
 		GameCanvas.clearKeyHold();
 	}

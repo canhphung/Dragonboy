@@ -143,7 +143,7 @@ public class GameCanvas : IActionListener
 
 	public static int planet = 0;
 
-	private mGraphics g = new mGraphics();
+	internal mGraphics g = new mGraphics();
 
 	public static Image img12;
 
@@ -157,7 +157,7 @@ public class GameCanvas : IActionListener
 
 	public static bool isPlaySound = true;
 
-	private static int clearOldData;
+	internal static int clearOldData;
 
 	public static int timeOpenKeyBoard;
 
@@ -171,17 +171,17 @@ public class GameCanvas : IActionListener
 
 	public static int upmax;
 
-	private long timefps = mSystem.currentTimeMillis() + 1000;
+	internal long timefps = mSystem.currentTimeMillis() + 1000;
 
-	private long timeup = mSystem.currentTimeMillis() + 1000;
+	internal long timeup = mSystem.currentTimeMillis() + 1000;
 
 	public static int isRequestMapID = -1;
 
 	public static long waitingTimeChangeMap;
 
-	private static int dir_ = -1;
+	internal static int dir_ = -1;
 
-	private int tickWaitThongBao;
+	internal int tickWaitThongBao;
 
 	public bool isPaintCarret;
 
@@ -191,7 +191,7 @@ public class GameCanvas : IActionListener
 
 	public static MyVector debugSession;
 
-	private static bool isShowErrorForm = false;
+	internal static bool isShowErrorForm = false;
 
 	public static bool paintBG;
 
@@ -289,13 +289,13 @@ public class GameCanvas : IActionListener
 
 	public static bool isLoadBGok;
 
-	private static long lastTimePress = 0L;
+	internal static long lastTimePress = 0L;
 
 	public static int keyAsciiPress;
 
 	public static int pXYScrollMouse;
 
-	private static Image imgSignal;
+	internal static Image imgSignal;
 
 	public static MyVector flyTexts = new MyVector();
 
@@ -303,13 +303,13 @@ public class GameCanvas : IActionListener
 
 	public static long timeBreakLoading;
 
-	private static string thongBaoTest;
+	internal static string thongBaoTest;
 
 	public static int xThongBaoTranslate = w - 60;
 
 	public static bool isPointerJustDown = false;
 
-	private int count = 1;
+	internal int count = 1;
 
 	public static bool csWait;
 
@@ -461,7 +461,7 @@ public class GameCanvas : IActionListener
 		borderCenterH = mGraphics.getImageHeight(imgBorder[1]);
 		Panel.graphics = Rms.loadRMSInt("lowGraphic");
 		lowGraphic = Rms.loadRMSInt("lowGraphic") == 1;
-		GameScr.isPaintChatVip = ((Rms.loadRMSInt("serverchat") != 1) ? true : false);
+		GameScr.isPaintChatVip = Rms.loadRMSInt("serverchat") != 1;
 		Char.isPaintAura = Rms.loadRMSInt("isPaintAura") == 1;
 		Char.isPaintAura2 = Rms.loadRMSInt("isPaintAura2") == 1;
 		Res.init();
@@ -1815,7 +1815,7 @@ public class GameCanvas : IActionListener
 		}
 	}
 
-	private static void randomRaintEff(int typeBG)
+	internal static void randomRaintEff(int typeBG)
 	{
 		for (int i = 0; i < bgRain.Length; i++)
 		{

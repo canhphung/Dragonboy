@@ -1,6 +1,6 @@
 public class ChatTextField : IActionListener
 {
-	private static ChatTextField instance;
+	internal static ChatTextField instance;
 
 	public TField tfChat;
 
@@ -8,7 +8,7 @@ public class ChatTextField : IActionListener
 
 	public IChatable parentScreen;
 
-	private long lastChatTime;
+	internal long lastChatTime;
 
 	public Command left;
 
@@ -18,15 +18,15 @@ public class ChatTextField : IActionListener
 
 	public Command center;
 
-	private int x;
+	internal int x;
 
-	private int y;
+	internal int y;
 
-	private int w;
+	internal int w;
 
-	private int h;
+	internal int h;
 
-	private bool isPublic;
+	internal bool isPublic;
 
 	public Command cmdChat2;
 

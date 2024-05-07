@@ -2,7 +2,7 @@ public class MonsterDart : Effect2
 {
 	public int va;
 
-	private DartInfo info;
+	internal DartInfo info;
 
 	public static MyRandom r = new MyRandom();
 
@@ -22,7 +22,7 @@ public class MonsterDart : Effect2
 
 	public int yTo;
 
-	private int life;
+	internal int life;
 
 	public bool isSpeedUp;
 
@@ -36,9 +36,9 @@ public class MonsterDart : Effect2
 
 	public MyVector darts = new MyVector();
 
-	private int dx;
+	internal int dx;
 
-	private int dy;
+	internal int dy;
 
 	public static int[] ARROWINDEX = new int[18]
 	{
@@ -143,9 +143,9 @@ public class MonsterDart : Effect2
 				}
 			}
 			int num2 = Res.angle(dx, dy);
-			if (Math.abs(num2 - angle) < 90 || dx * dx + dy * dy > 4096)
+			if (Math2.abs(num2 - angle) < 90 || dx * dx + dy * dy > 4096)
 			{
-				if (Math.abs(num2 - angle) < 15)
+				if (Math2.abs(num2 - angle) < 15)
 					angle = num2;
 				else if ((num2 - angle >= 0 && num2 - angle < 180) || num2 - angle < -180)
 				{

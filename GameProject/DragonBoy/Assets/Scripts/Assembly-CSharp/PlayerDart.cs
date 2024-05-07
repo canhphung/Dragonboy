@@ -20,11 +20,11 @@ public class PlayerDart
 
 	public int z;
 
-	private int life;
+	internal int life;
 
-	private int dx;
+	internal int dx;
 
-	private int dy;
+	internal int dy;
 
 	public bool isActive = true;
 
@@ -77,9 +77,9 @@ public class PlayerDart
 				return;
 			}
 			int num2 = Res.angle(dx, dy);
-			if (Math.abs(num2 - angle) < 90 || dx * dx + dy * dy > 4096)
+			if (Math2.abs(num2 - angle) < 90 || dx * dx + dy * dy > 4096)
 			{
-				if (Math.abs(num2 - angle) < 15)
+				if (Math2.abs(num2 - angle) < 15)
 					angle = num2;
 				else if ((num2 - angle >= 0 && num2 - angle < 180) || num2 - angle < -180)
 				{
@@ -110,7 +110,7 @@ public class PlayerDart
 		}
 	}
 
-	private void endMe()
+	internal void endMe()
 	{
 		if (!charBelong.isUseSkillAfterCharge && x >= GameScr.cmx && x <= GameScr.cmx + GameCanvas.w)
 			SoundMn.gI().explode_1();

@@ -1,18 +1,18 @@
 public class FireWorkMn
 {
-	private int x;
+	internal int x;
 
-	private int y;
+	internal int y;
 
-	private int goc = 1;
+	internal int goc = 1;
 
-	private int n = 360;
+	internal int n = 360;
 
-	private MyRandom rd = new MyRandom();
+	internal MyRandom rd = new MyRandom();
 
-	private MyVector fw = new MyVector();
+	internal MyVector fw = new MyVector();
 
-	private int[] color = new int[8] { 16711680, 16776960, 65280, 16777215, 255, 65535, 15790320, 12632256 };
+	internal int[] color = new int[8] { 16711680, 16776960, 65280, 16777215, 255, 65535, 15790320, 12632256 };
 
 	public FireWorkMn(int x, int y, int goc, int n)
 	{
@@ -22,7 +22,7 @@ public class FireWorkMn
 		this.n = n;
 		for (int i = 0; i < n; i++)
 		{
-			fw.addElement(new Firework(x, y, Math.abs(rd.nextInt() % 8) + 3, i * goc, color[Math.abs(rd.nextInt() % color.Length)]));
+			fw.addElement(new Firework(x, y, Math2.abs(rd.nextInt() % 8) + 3, i * goc, color[Math2.abs(rd.nextInt() % color.Length)]));
 		}
 	}
 

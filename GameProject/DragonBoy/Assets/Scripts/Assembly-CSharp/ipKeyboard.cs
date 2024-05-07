@@ -2,7 +2,7 @@ using System;
 
 public class ipKeyboard
 {
-	private static TouchScreenKeyboard tk;
+	internal static TouchScreenKeyboard tk;
 
 	public static int TEXT;
 
@@ -10,7 +10,7 @@ public class ipKeyboard
 
 	public static int PASS = 2;
 
-	private static Command act;
+	internal static Command act;
 
 	public static void openKeyBoard(string caption, int type, string text, Command action)
 	{

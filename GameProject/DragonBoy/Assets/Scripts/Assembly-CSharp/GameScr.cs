@@ -109,15 +109,15 @@ public class GameScr : mScreen, IChatable
 
 	public static int lockTick;
 
-	private int moveUp;
+	internal int moveUp;
 
-	private int moveDow;
+	internal int moveDow;
 
-	private int idTypeTask;
+	internal int idTypeTask;
 
-	private bool isstarOpen;
+	internal bool isstarOpen;
 
-	private bool isChangeSkill;
+	internal bool isChangeSkill;
 
 	public static MyVector vClan = new MyVector();
 
@@ -161,7 +161,7 @@ public class GameScr : mScreen, IChatable
 
 	public SkillOptionTemplate[] sOptionTemplates;
 
-	private static Scroll scrInfo = new Scroll();
+	internal static Scroll scrInfo = new Scroll();
 
 	public static Scroll scrMain = new Scroll();
 
@@ -459,7 +459,7 @@ public class GameScr : mScreen, IChatable
 
 	public MagicTree magicTree;
 
-	private short l;
+	internal short l;
 
 	public static int countEff;
 
@@ -485,7 +485,7 @@ public class GameScr : mScreen, IChatable
 
 	public Command cmdshowInfo;
 
-	private static Command[] cmdTestLogin = null;
+	internal static Command[] cmdTestLogin = null;
 
 	public const int numSkill = 10;
 
@@ -507,17 +507,17 @@ public class GameScr : mScreen, IChatable
 
 	public bool isChangingCameraMode;
 
-	private int ptLastDownX;
+	internal int ptLastDownX;
 
-	private int ptLastDownY;
+	internal int ptLastDownY;
 
-	private int ptFirstDownX;
+	internal int ptFirstDownX;
 
-	private int ptFirstDownY;
+	internal int ptFirstDownY;
 
-	private int ptDownTime;
+	internal int ptDownTime;
 
-	private bool disableSingleClick;
+	internal bool disableSingleClick;
 
 	public long lastSingleClick;
 
@@ -527,33 +527,33 @@ public class GameScr : mScreen, IChatable
 
 	public bool clickMovingRed;
 
-	private int clickToX;
+	internal int clickToX;
 
-	private int clickToY;
+	internal int clickToY;
 
-	private int lastClickCMX;
+	internal int lastClickCMX;
 
-	private int lastClickCMY;
+	internal int lastClickCMY;
 
-	private int clickMovingP1;
+	internal int clickMovingP1;
 
-	private int clickMovingTimeOut;
+	internal int clickMovingTimeOut;
 
-	private long lastMove;
+	internal long lastMove;
 
 	public static bool isNewClanMessage;
 
-	private long lastFire;
+	internal long lastFire;
 
-	private long lastUsePotion;
+	internal long lastUsePotion;
 
 	public int auto;
 
 	public int dem;
 
-	private string strTam = string.Empty;
+	internal string strTam = string.Empty;
 
-	private int a;
+	internal int a;
 
 	public bool isFreez;
 
@@ -595,35 +595,35 @@ public class GameScr : mScreen, IChatable
 
 	public static bool isChangeZone;
 
-	private int timeSkill;
+	internal int timeSkill;
 
-	private int nSkill;
+	internal int nSkill;
 
-	private int selectedIndexSkill = -1;
+	internal int selectedIndexSkill = -1;
 
-	private Skill lastSkill;
+	internal Skill lastSkill;
 
-	private bool doSeleckSkillFlag;
+	internal bool doSeleckSkillFlag;
 
 	public string strCapcha;
 
-	private long longPress;
+	internal long longPress;
 
-	private int move;
+	internal int move;
 
 	public bool flareFindFocus;
 
-	private int flareTime;
+	internal int flareTime;
 
 	public int keyTouchSkill = -1;
 
-	private long lastSendUpdatePostion;
+	internal long lastSendUpdatePostion;
 
 	public static long lastTick;
 
 	public static long currTick;
 
-	private int timeAuto;
+	internal int timeAuto;
 
 	public static long lastXS;
 
@@ -651,43 +651,43 @@ public class GameScr : mScreen, IChatable
 
 	public static int shock_scr;
 
-	private static int[] shock_x = new int[4] { 1, -1, 1, -1 };
+	internal static int[] shock_x = new int[4] { 1, -1, 1, -1 };
 
-	private static int[] shock_y = new int[4] { 1, -1, -1, 1 };
+	internal static int[] shock_y = new int[4] { 1, -1, -1, 1 };
 
-	private int tDoubleDelay;
+	internal int tDoubleDelay;
 
 	public static Image arrow;
 
-	private static int yTouchBar;
+	internal static int yTouchBar;
 
-	private static int xC;
+	internal static int xC;
 
-	private static int yC;
+	internal static int yC;
 
-	private static int xL;
+	internal static int xL;
 
-	private static int yL;
+	internal static int yL;
 
 	public int xR;
 
 	public int yR;
 
-	private static int xU;
+	internal static int xU;
 
-	private static int yU;
+	internal static int yU;
 
-	private static int xF;
+	internal static int xF;
 
-	private static int yF;
+	internal static int yF;
 
 	public static int xHP;
 
 	public static int yHP;
 
-	private static int xTG;
+	internal static int xTG;
 
-	private static int yTG;
+	internal static int yTG;
 
 	public static int[] xS;
 
@@ -711,13 +711,13 @@ public class GameScr : mScreen, IChatable
 
 	public bool isInjureHp;
 
-	private long curr;
+	internal long curr;
 
-	private long last;
+	internal long last;
 
-	private int secondVS;
+	internal int secondVS;
 
-	private int[] idVS = new int[2] { -1, -1 };
+	internal int[] idVS = new int[2] { -1, -1 };
 
 	public static string[] flyTextString;
 
@@ -783,7 +783,7 @@ public class GameScr : mScreen, IChatable
 
 	public static Image[] imgCmdBar;
 
-	private int imgScrW;
+	internal int imgScrW;
 
 	public static int popupY;
 
@@ -793,7 +793,7 @@ public class GameScr : mScreen, IChatable
 
 	public static int isselectedRow;
 
-	private static Image imgNolearn;
+	internal static Image imgNolearn;
 
 	public int cmxp;
 
@@ -811,11 +811,11 @@ public class GameScr : mScreen, IChatable
 
 	public int cmdyp;
 
-	private int indexTiemNang;
+	internal int indexTiemNang;
 
-	private string alertURL;
+	internal string alertURL;
 
-	private string fnick;
+	internal string fnick;
 
 	public static int xstart;
 
@@ -839,15 +839,15 @@ public class GameScr : mScreen, IChatable
 
 	public static int rows;
 
-	private int totalRowInfo;
+	internal int totalRowInfo;
 
-	private int ypaintKill;
+	internal int ypaintKill;
 
-	private int ylimUp;
+	internal int ylimUp;
 
-	private int ylimDow;
+	internal int ylimDow;
 
-	private int yPaint;
+	internal int yPaint;
 
 	public static int indexEff = 0;
 
@@ -875,17 +875,17 @@ public class GameScr : mScreen, IChatable
 
 	public static int UPGRADE = 3;
 
-	private int Hitem = 30;
+	internal int Hitem = 30;
 
-	private int maxSizeRow = 5;
+	internal int maxSizeRow = 5;
 
-	private int isTranKyNang;
+	internal int isTranKyNang;
 
-	private bool isTran;
+	internal bool isTran;
 
-	private int cmY_Old;
+	internal int cmY_Old;
 
-	private int cmX_Old;
+	internal int cmX_Old;
 
 	public PopUpYesNo popUpYesNo;
 
@@ -907,17 +907,17 @@ public class GameScr : mScreen, IChatable
 
 	public int moveIndex;
 
-	private bool isWin;
+	internal bool isWin;
 
-	private string strFinish;
+	internal string strFinish;
 
-	private int tShow;
+	internal int tShow;
 
-	private int xChatVip;
+	internal int xChatVip;
 
-	private int currChatWidth;
+	internal int currChatWidth;
 
-	private bool startChat;
+	internal bool startChat;
 
 	public sbyte percentMabu;
 
@@ -931,9 +931,9 @@ public class GameScr : mScreen, IChatable
 
 	public static sbyte isNewMember;
 
-	private string yourNumber = string.Empty;
+	internal string yourNumber = string.Empty;
 
-	private string[] strPaint;
+	internal string[] strPaint;
 
 	public static Image imgHP_NEW;
 
@@ -969,13 +969,13 @@ public class GameScr : mScreen, IChatable
 
 	public static bool is_Paint_boardCT_Expand;
 
-	private static int xRect;
+	internal static int xRect;
 
-	private static int yRect;
+	internal static int yRect;
 
-	private static int wRect;
+	internal static int wRect;
 
-	private static int hRect;
+	internal static int hRect;
 
 	public static MyVector res_CT = new MyVector();
 
@@ -1299,7 +1299,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private void loadDefaultonScreenSkill()
+	internal void loadDefaultonScreenSkill()
 	{
 		Cout.println("LOAD DEFAULT ONmScreen SKILL");
 		for (int i = 0; i < onScreenSkill.Length && i < Char.myCharz().vSkillFight.size(); i++)
@@ -1310,7 +1310,7 @@ public class GameScr : mScreen, IChatable
 		saveonScreenSkillToRMS();
 	}
 
-	private void loadDefaultKeySkill()
+	internal void loadDefaultKeySkill()
 	{
 		Cout.println("LOAD DEFAULT KEY SKILL");
 		for (int i = 0; i < keySkill.Length && i < Char.myCharz().vSkillFight.size(); i++)
@@ -1937,7 +1937,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private static void updateCamera()
+	internal static void updateCamera()
 	{
 		if (isPaintOther)
 			return;
@@ -2112,8 +2112,8 @@ public class GameScr : mScreen, IChatable
 				Char.myCharz().cdir = 1;
 			else
 				Char.myCharz().cdir = -1;
-			int num3 = Math.abs(Char.myCharz().cx - Char.myCharz().mobFocus.getX());
-			int num4 = Math.abs(Char.myCharz().cy - Char.myCharz().mobFocus.getY());
+			int num3 = Math2.abs(Char.myCharz().cx - Char.myCharz().mobFocus.getX());
+			int num4 = Math2.abs(Char.myCharz().cy - Char.myCharz().mobFocus.getY());
 			Char.myCharz().cvx = 0;
 			if (num3 <= Char.myCharz().myskill.dx && num4 <= Char.myCharz().myskill.dy)
 			{
@@ -2215,8 +2215,8 @@ public class GameScr : mScreen, IChatable
 				Char.myCharz().npcFocus.cdir = -1;
 			else
 				Char.myCharz().npcFocus.cdir = 1;
-			int num11 = Math.abs(Char.myCharz().cx - Char.myCharz().npcFocus.cx);
-			if (Math.abs(Char.myCharz().cy - Char.myCharz().npcFocus.cy) > 40)
+			int num11 = Math2.abs(Char.myCharz().cx - Char.myCharz().npcFocus.cx);
+			if (Math2.abs(Char.myCharz().cy - Char.myCharz().npcFocus.cy) > 40)
 				Char.myCharz().cy = Char.myCharz().npcFocus.cy - 40;
 			if (num11 < 60)
 			{
@@ -2256,8 +2256,8 @@ public class GameScr : mScreen, IChatable
 				Char.myCharz().cdir = 1;
 			else
 				Char.myCharz().cdir = -1;
-			int num14 = Math.abs(Char.myCharz().cx - Char.myCharz().charFocus.cx);
-			int num15 = Math.abs(Char.myCharz().cy - Char.myCharz().charFocus.cy);
+			int num14 = Math2.abs(Char.myCharz().cx - Char.myCharz().charFocus.cx);
+			int num15 = Math2.abs(Char.myCharz().cy - Char.myCharz().charFocus.cy);
 			if (Char.myCharz().isMeCanAttackOtherPlayer(Char.myCharz().charFocus) || Char.myCharz().isSelectingSkillBuffToPlayer())
 			{
 				if (Char.myCharz().myskill == null)
@@ -2364,7 +2364,7 @@ public class GameScr : mScreen, IChatable
 		return false;
 	}
 
-	private bool checkSkillValid()
+	internal bool checkSkillValid()
 	{
 		if (Char.myCharz().myskill != null && ((Char.myCharz().myskill.template.manaUseType != 1 && Char.myCharz().cMP < Char.myCharz().myskill.manaUse) || (Char.myCharz().myskill.template.manaUseType == 1 && Char.myCharz().cMP < Char.myCharz().cMPFull * Char.myCharz().myskill.manaUse / 100)))
 		{
@@ -2380,7 +2380,7 @@ public class GameScr : mScreen, IChatable
 		return true;
 	}
 
-	private bool checkSkillValid2()
+	internal bool checkSkillValid2()
 	{
 		if (Char.myCharz().myskill != null && ((Char.myCharz().myskill.template.manaUseType != 1 && Char.myCharz().cMP < Char.myCharz().myskill.manaUse) || (Char.myCharz().myskill.template.manaUseType == 1 && Char.myCharz().cMP < Char.myCharz().cMPFull * Char.myCharz().myskill.manaUse / 100)))
 			return false;
@@ -2956,7 +2956,7 @@ public class GameScr : mScreen, IChatable
 		return true;
 	}
 
-	private void checkDrag()
+	internal void checkDrag()
 	{
 		if (isAnalog == 1 || gamePad.disableCheckDrag())
 			return;
@@ -3024,7 +3024,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private void checkClick()
+	internal void checkClick()
 	{
 		if (isCharging())
 			return;
@@ -3067,7 +3067,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private IMapObject findClickToItem(int px, int py)
+	internal IMapObject findClickToItem(int px, int py)
 	{
 		IMapObject mapObject = null;
 		int num = 0;
@@ -3113,7 +3113,7 @@ public class GameScr : mScreen, IChatable
 		return mapObject;
 	}
 
-	private Mob findClickToMOB(int px, int py)
+	internal Mob findClickToMOB(int px, int py)
 	{
 		int num = 30;
 		Mob mob = null;
@@ -3151,12 +3151,12 @@ public class GameScr : mScreen, IChatable
 		return mob;
 	}
 
-	private bool inRectangle(int xClick, int yClick, int x, int y, int w, int h)
+	internal bool inRectangle(int xClick, int yClick, int x, int y, int w, int h)
 	{
 		return xClick >= x && xClick <= x + w && yClick >= y && yClick <= y + h;
 	}
 
-	private bool checkSingleClickEarly()
+	internal bool checkSingleClickEarly()
 	{
 		int num = GameCanvas.px + cmx;
 		int num2 = GameCanvas.py + cmy;
@@ -3192,7 +3192,7 @@ public class GameScr : mScreen, IChatable
 		return false;
 	}
 
-	private void checkDoubleClick()
+	internal void checkDoubleClick()
 	{
 		int num = GameCanvas.px + lastClickCMX;
 		int num2 = GameCanvas.py + lastClickCMY;
@@ -3229,7 +3229,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private bool checkClickToBotton(IMapObject Object)
+	internal bool checkClickToBotton(IMapObject Object)
 	{
 		if (Object == null)
 			return false;
@@ -3252,7 +3252,7 @@ public class GameScr : mScreen, IChatable
 		return false;
 	}
 
-	private void doDoubleClickToObj(IMapObject obj)
+	internal void doDoubleClickToObj(IMapObject obj)
 	{
 		if ((obj.Equals(Char.myCharz().npcFocus) || mobCapcha == null) && !checkClickToBotton(obj))
 		{
@@ -3273,7 +3273,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private void checkSingleClick()
+	internal void checkSingleClick()
 	{
 		int xClick = GameCanvas.px + lastClickCMX;
 		int yClick = GameCanvas.py + lastClickCMY;
@@ -3281,7 +3281,7 @@ public class GameScr : mScreen, IChatable
 			checkClickMoveTo(xClick, yClick, 0);
 	}
 
-	private bool checkClipTopChatPopUp(int xClick, int yClick)
+	internal bool checkClipTopChatPopUp(int xClick, int yClick)
 	{
 		if (Equals(info2) && gI().popUpYesNo != null)
 			return false;
@@ -3300,7 +3300,7 @@ public class GameScr : mScreen, IChatable
 		return false;
 	}
 
-	private bool checkClickToPopup(int xClick, int yClick)
+	internal bool checkClickToPopup(int xClick, int yClick)
 	{
 		for (int i = 0; i < PopUp.vPopups.size(); i++)
 		{
@@ -3319,7 +3319,7 @@ public class GameScr : mScreen, IChatable
 		return false;
 	}
 
-	private void checkClickMoveTo(int xClick, int yClick, int index)
+	internal void checkClickMoveTo(int xClick, int yClick, int index)
 	{
 		if (gamePad.disableClickMove())
 			return;
@@ -3385,7 +3385,7 @@ public class GameScr : mScreen, IChatable
 		isAutoPlay = false;
 	}
 
-	private void checkAuto()
+	internal void checkAuto()
 	{
 		long num = mSystem.currentTimeMillis();
 		if (GameCanvas.keyPressed[(!Main.isPC) ? 2 : 21] || GameCanvas.keyPressed[(!Main.isPC) ? 4 : 23] || GameCanvas.keyPressed[(!Main.isPC) ? 6 : 24] || GameCanvas.keyPressed[1] || GameCanvas.keyPressed[3])
@@ -3498,7 +3498,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private void autoPlay()
+	internal void autoPlay()
 	{
 		if (timeSkill > 0)
 			timeSkill--;
@@ -3597,7 +3597,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private void doFire(bool isFireByShortCut, bool skipWaypoint)
+	internal void doFire(bool isFireByShortCut, bool skipWaypoint)
 	{
 		tam++;
 		Waypoint waypoint = Char.myCharz().isInEnterOfflinePoint();
@@ -3647,7 +3647,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private void askToPick()
+	internal void askToPick()
 	{
 		Npc npc = new Npc(5, 0, -100, 100, 5, info1.charId[Char.myCharz().cgender][2]);
 		string nhatvatpham = mResources.nhatvatpham;
@@ -3661,7 +3661,7 @@ public class GameScr : mScreen, IChatable
 		ChatPopup.addChatPopupWithIcon(nhatvatpham, 100000, npc, 5820);
 	}
 
-	private void pickItem()
+	internal void pickItem()
 	{
 		if (Char.myCharz().itemFocus == null)
 			return;
@@ -3669,8 +3669,8 @@ public class GameScr : mScreen, IChatable
 			Char.myCharz().cdir = 1;
 		else
 			Char.myCharz().cdir = -1;
-		int num = Math.abs(Char.myCharz().cx - Char.myCharz().itemFocus.x);
-		int num2 = Math.abs(Char.myCharz().cy - Char.myCharz().itemFocus.y);
+		int num = Math2.abs(Char.myCharz().cx - Char.myCharz().itemFocus.x);
+		int num2 = Math2.abs(Char.myCharz().cy - Char.myCharz().itemFocus.y);
 		if (num <= 40 && num2 < 40)
 		{
 			GameCanvas.clearKeyHold();
@@ -3883,7 +3883,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private void updateKeyTouchControl()
+	internal void updateKeyTouchControl()
 	{
 		if (isNotPaintTouchControl())
 			return;
@@ -3996,7 +3996,7 @@ public class GameScr : mScreen, IChatable
 							Item item2 = Char.myCharz().arrItemBag[j];
 							if (item2 != null && item2.template.id == 193)
 							{
-								isudungCapsun3 = ((item2.quantity > 0) ? true : false);
+								isudungCapsun3 = item2.quantity > 0;
 								if (isudungCapsun3)
 								{
 									Service.gI().useItem(0, 1, (sbyte)j, -1);
@@ -4908,7 +4908,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private void paintXoSo(mGraphics g)
+	internal void paintXoSo(mGraphics g)
 	{
 		if (tShow != 0)
 		{
@@ -4923,7 +4923,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private void checkEffToObj(IMapObject obj, bool isnew)
+	internal void checkEffToObj(IMapObject obj, bool isnew)
 	{
 		if (obj == null || tDoubleDelay > 0)
 			return;
@@ -4945,7 +4945,7 @@ public class GameScr : mScreen, IChatable
 			ServerEffect.addServerEffect(136, obj.getX(), obj.getY(), num);
 	}
 
-	private void updateClickToArrow()
+	internal void updateClickToArrow()
 	{
 		if (tDoubleDelay > 0)
 			tDoubleDelay--;
@@ -4958,7 +4958,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private void paintWaypointArrow(mGraphics g)
+	internal void paintWaypointArrow(mGraphics g)
 	{
 		int num = 10;
 		Task taskMaint = Char.myCharz().taskMaint;
@@ -5052,7 +5052,7 @@ public class GameScr : mScreen, IChatable
 		return null;
 	}
 
-	private void paintArrowPointToNPC(mGraphics g)
+	internal void paintArrowPointToNPC(mGraphics g)
 	{
 		try
 		{
@@ -5165,7 +5165,7 @@ public class GameScr : mScreen, IChatable
 		g.setClip(0, -200, GameCanvas.w, 200 + GameCanvas.h);
 	}
 
-	private void paintTouchControl(mGraphics g)
+	internal void paintTouchControl(mGraphics g)
 	{
 		if (isNotPaintTouchControl())
 			return;
@@ -5203,7 +5203,7 @@ public class GameScr : mScreen, IChatable
 		g.setClip(0, 0, GameCanvas.w, GameCanvas.h);
 	}
 
-	private void paintImageBar(mGraphics g, bool isLeft, Char c)
+	internal void paintImageBar(mGraphics g, bool isLeft, Char c)
 	{
 		if (c != null)
 		{
@@ -5280,7 +5280,7 @@ public class GameScr : mScreen, IChatable
 		secondVS = 180;
 	}
 
-	private Char findCharVS1()
+	internal Char findCharVS1()
 	{
 		for (int i = 0; i < vCharInMap.size(); i++)
 		{
@@ -5291,7 +5291,7 @@ public class GameScr : mScreen, IChatable
 		return null;
 	}
 
-	private Char findCharVS2()
+	internal Char findCharVS2()
 	{
 		for (int i = 0; i < vCharInMap.size(); i++)
 		{
@@ -5302,7 +5302,7 @@ public class GameScr : mScreen, IChatable
 		return null;
 	}
 
-	private void paintInfoBar(mGraphics g)
+	internal void paintInfoBar(mGraphics g)
 	{
 		resetTranslate(g);
 		if (TileMap.mapID == 130 && findCharVS1() != null && findCharVS2() != null)
@@ -5386,7 +5386,7 @@ public class GameScr : mScreen, IChatable
 		return false;
 	}
 
-	private void paintSelectedSkill(mGraphics g)
+	internal void paintSelectedSkill(mGraphics g)
 	{
 		if (mobCapcha != null)
 			paintCapcha(g);
@@ -5683,7 +5683,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private void loadInforBar()
+	internal void loadInforBar()
 	{
 		imgScrW = 84;
 		hpBarW = 66L;
@@ -5705,9 +5705,9 @@ public class GameScr : mScreen, IChatable
 				cmySK += cmdySK >> 4;
 				cmdySK &= 15;
 			}
-			if (Math.abs(cmtoYSK - cmySK) < 15 && cmySK < 0)
+			if (Math2.abs(cmtoYSK - cmySK) < 15 && cmySK < 0)
 				cmtoYSK = 0;
-			if (Math.abs(cmtoYSK - cmySK) < 15 && cmySK > cmyLimSK)
+			if (Math2.abs(cmtoYSK - cmySK) < 15 && cmySK > cmyLimSK)
 				cmtoYSK = cmyLimSK;
 		}
 	}
@@ -6008,7 +6008,7 @@ public class GameScr : mScreen, IChatable
 		setPopupSize(175, 200);
 	}
 
-	private void actDead()
+	internal void actDead()
 	{
 		MyVector myVector = new MyVector();
 		myVector.addElement(new Command(mResources.DIES[1], 110381));
@@ -6354,7 +6354,7 @@ public class GameScr : mScreen, IChatable
 			GameCanvas.endDlg();
 	}
 
-	private static void setTouchBtn()
+	internal static void setTouchBtn()
 	{
 		if (isAnalog != 0)
 		{
@@ -6374,7 +6374,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private void updateGamePad()
+	internal void updateGamePad()
 	{
 		if (isAnalog == 0 || Char.myCharz().statusMe == 14)
 			return;
@@ -6401,7 +6401,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private void paintGamePad(mGraphics g)
+	internal void paintGamePad(mGraphics g)
 	{
 		if (isAnalog != 0 && Char.myCharz().statusMe != 14)
 		{
@@ -6726,7 +6726,7 @@ public class GameScr : mScreen, IChatable
 		return false;
 	}
 
-	private void paint_xp_bar(mGraphics g)
+	internal void paint_xp_bar(mGraphics g)
 	{
 		g.setColor(8421504);
 		g.fillRect(0, GameCanvas.h - 2, GameCanvas.w, 2);
@@ -6741,7 +6741,7 @@ public class GameScr : mScreen, IChatable
 		}
 	}
 
-	private void paint_ios_bg(mGraphics g)
+	internal void paint_ios_bg(mGraphics g)
 	{
 		if (mSystem.clientType == 5)
 		{
@@ -6840,7 +6840,7 @@ public class GameScr : mScreen, IChatable
 		GameCanvas.resetTrans(g);
 	}
 
-	private void paint_board_CT(mGraphics g, int x, int y)
+	internal void paint_board_CT(mGraphics g, int x, int y)
 	{
 		if (!is_Paint_boardCT_Expand)
 		{
@@ -6911,7 +6911,7 @@ public class GameScr : mScreen, IChatable
 		GameCanvas.resetTrans(g);
 	}
 
-	private void paintHPCT(mGraphics g, int x, int y, Char c)
+	internal void paintHPCT(mGraphics g, int x, int y, Char c)
 	{
 		g.drawImage(imgKhung, x, y, 0);
 		int x2 = x + 3;

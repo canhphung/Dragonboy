@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Res
 {
-	private static short[] sinz = new short[91]
+	internal static short[] sinz = new short[91]
 	{
 		0, 18, 36, 54, 71, 89, 107, 125, 143, 160,
 		178, 195, 213, 230, 248, 265, 282, 299, 316, 333,
@@ -16,9 +16,9 @@ public class Res
 		1024
 	};
 
-	private static short[] cosz;
+	internal static short[] cosz;
 
-	private static int[] tanz;
+	internal static int[] tanz;
 
 	public static string[] LOG_CAT = new string[5]
 	{
@@ -104,7 +104,7 @@ public class Res
 		int num;
 		if (dx != 0)
 		{
-			num = atan(Math.abs((dy << 10) / dx));
+			num = atan(Math2.abs((dy << 10) / dx));
 			if (dy >= 0 && dx < 0)
 				num = 180 - num;
 			if (dy < 0 && dx < 0)
@@ -244,7 +244,7 @@ public class Res
 			num2 = num;
 			num = num / 2 + a / (2 * num);
 		}
-		while (Math.abs(num2 - num) > 1);
+		while (Math2.abs(num2 - num) > 1);
 		return num;
 	}
 

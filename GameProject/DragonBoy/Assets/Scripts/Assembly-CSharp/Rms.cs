@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using System.Linq;
 using System.Threading;
 using UnityEngine;
 
@@ -12,9 +11,9 @@ public class Rms
 
 	public static string filename;
 
-	private const int INTERVAL = 5;
+	internal const int INTERVAL = 5;
 
-	private const int MAXTIME = 500;
+	internal const int MAXTIME = 500;
 
 	public static void saveRMS(string filename, sbyte[] data)
 	{
@@ -78,7 +77,7 @@ public class Rms
 		}
 	}
 
-	private static void _saveRMS(string filename, sbyte[] data)
+	internal static void _saveRMS(string filename, sbyte[] data)
 	{
 		if (status != 0)
 		{
@@ -99,7 +98,7 @@ public class Rms
 			Debug.LogError("TOO LONG TO SAVE RMS " + filename);
 	}
 
-	private static sbyte[] _loadRMS(string filename)
+	internal static sbyte[] _loadRMS(string filename)
 	{
 		if (status != 0)
 		{
@@ -159,7 +158,7 @@ public class Rms
 		return Application.persistentDataPath;
 	}
 
-	private static void __saveRMS(string filename, sbyte[] data)
+	internal static void __saveRMS(string filename, sbyte[] data)
 	{
 		string text = GetiPhoneDocumentsPath() + "/" + filename;
 		FileStream fileStream = new FileStream(text, FileMode.Create);
@@ -169,7 +168,7 @@ public class Rms
 		Main.setBackupIcloud(text);
 	}
 
-	private static sbyte[] __loadRMS(string filename)
+	internal static sbyte[] __loadRMS(string filename)
 	{
 		try
 		{
@@ -189,9 +188,10 @@ public class Rms
 	public static void clearAll()
 	{
 		Cout.LogError3("clean rms");
-		foreach (FileInfo file in new DirectoryInfo(GetiPhoneDocumentsPath() + "/").GetFiles().Where(f => f.Extension != ".log"))
+		FileInfo[] files = new DirectoryInfo(GetiPhoneDocumentsPath() + "/").GetFiles();
+		for (int i = 0; i < files.Length; i++)
 		{
-			file.Delete();
+			files[i].Delete();
 		}
 	}
 

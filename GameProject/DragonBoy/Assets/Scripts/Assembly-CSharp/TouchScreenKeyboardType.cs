@@ -1,6 +1,6 @@
 public enum TouchScreenKeyboardType
 {
-	Default,
-	ASCIICapable,
-	NumberPad
+	Default = 0,
+	ASCIICapable = 1,
+	NumberPad = 2
 }

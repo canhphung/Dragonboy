@@ -119,21 +119,21 @@ public class Panel : IActionListener, IChatable
 
 	public static Image imgLuongKhoa;
 
-	private static Image imgUp;
+	internal static Image imgUp;
 
-	private static Image imgDown;
+	internal static Image imgDown;
 
-	private int pa1;
+	internal int pa1;
 
-	private int pa2;
+	internal int pa2;
 
-	private bool trans;
+	internal bool trans;
 
-	private int pX;
+	internal int pX;
 
-	private int pY;
+	internal int pY;
 
-	private Command left = new Command(mResources.SELECT, 0);
+	internal Command left = new Command(mResources.SELECT, 0);
 
 	public int type;
 
@@ -145,7 +145,7 @@ public class Panel : IActionListener, IChatable
 
 	public string[][] currentTabName;
 
-	private int[] currClanOption;
+	internal int[] currClanOption;
 
 	public int mainTabPos = 4;
 
@@ -197,30 +197,30 @@ public class Panel : IActionListener, IChatable
 
 	public int[] currPageShop;
 
-	private static string[][] boxTabName = new string[2][]
+	internal static string[][] boxTabName = new string[2][]
 	{
 		mResources.chestt,
 		mResources.inventory
 	};
 
-	private static string[][] boxCombine = new string[2][]
+	internal static string[][] boxCombine = new string[2][]
 	{
 		mResources.combine,
 		mResources.inventory
 	};
 
-	private static string[][] boxZone = new string[1][] { mResources.zonee };
+	internal static string[][] boxZone = new string[1][] { mResources.zonee };
 
-	private static string[][] boxMap = new string[1][] { mResources.mapp };
+	internal static string[][] boxMap = new string[1][] { mResources.mapp };
 
-	private static string[][] boxGD = new string[3][]
+	internal static string[][] boxGD = new string[3][]
 	{
 		mResources.inventory,
 		mResources.item_give,
 		mResources.item_receive
 	};
 
-	private static string[][] boxPet = mResources.petMainTab;
+	internal static string[][] boxPet = mResources.petMainTab;
 
 	public string[][][] tabName = new string[27][][]
 	{
@@ -253,21 +253,21 @@ public class Panel : IActionListener, IChatable
 		new string[1][] { new string[1] { string.Empty } }
 	};
 
-	private static sbyte BOX_BAG = 0;
+	internal static sbyte BOX_BAG = 0;
 
-	private static sbyte BAG_BOX = 1;
+	internal static sbyte BAG_BOX = 1;
 
-	private static sbyte BOX_BODY = 2;
+	internal static sbyte BOX_BODY = 2;
 
-	private static sbyte BODY_BOX = 3;
+	internal static sbyte BODY_BOX = 3;
 
-	private static sbyte BAG_BODY = 4;
+	internal static sbyte BAG_BODY = 4;
 
-	private static sbyte BODY_BAG = 5;
+	internal static sbyte BODY_BAG = 5;
 
-	private static sbyte BAG_PET = 6;
+	internal static sbyte BAG_PET = 6;
 
-	private static sbyte PET_BAG = 7;
+	internal static sbyte PET_BAG = 7;
 
 	public int hasUse;
 
@@ -275,7 +275,7 @@ public class Panel : IActionListener, IChatable
 
 	public int currentListLength;
 
-	private int[] lastSelect;
+	internal int[] lastSelect;
 
 	public static int[] mapIdTraidat = new int[16]
 	{
@@ -375,7 +375,7 @@ public class Panel : IActionListener, IChatable
 
 	public static int WIDTH_PANEL = 240;
 
-	private int position;
+	internal int position;
 
 	public string playerChat;
 
@@ -383,7 +383,7 @@ public class Panel : IActionListener, IChatable
 
 	public Char charMenu;
 
-	private bool isThachDau;
+	internal bool isThachDau;
 
 	public int typeShop = -1;
 
@@ -401,21 +401,21 @@ public class Panel : IActionListener, IChatable
 
 	public int[] partID;
 
-	private int timeShow;
+	internal int timeShow;
 
 	public bool isBoxClan;
 
 	public int w;
 
-	private int pa;
+	internal int pa;
 
 	public int selected;
 
-	private int cSelected;
+	internal int cSelected;
 
-	private int newSelected;
+	internal int newSelected;
 
-	private bool isClanOption;
+	internal bool isClanOption;
 
 	public bool isSearchClan;
 
@@ -475,37 +475,37 @@ public class Panel : IActionListener, IChatable
 
 	public const int TYPE_SPEACIALSKILL = 25;
 
-	private int pointerDownTime;
+	internal int pointerDownTime;
 
-	private int pointerDownFirstX;
+	internal int pointerDownFirstX;
 
-	private int[] pointerDownLastX = new int[3];
+	internal int[] pointerDownLastX = new int[3];
 
-	private bool pointerIsDowning;
+	internal bool pointerIsDowning;
 
-	private bool isDownWhenRunning;
+	internal bool isDownWhenRunning;
 
-	private bool wantUpdateList;
+	internal bool wantUpdateList;
 
-	private int waitToPerform;
+	internal int waitToPerform;
 
-	private int cmRun;
+	internal int cmRun;
 
-	private int keyTouchLock = -1;
+	internal int keyTouchLock = -1;
 
-	private int keyToundGD = -1;
+	internal int keyToundGD = -1;
 
-	private int keyTouchCombine = -1;
+	internal int keyTouchCombine = -1;
 
-	private int keyTouchMapButton = -1;
+	internal int keyTouchMapButton = -1;
 
 	public int indexMouse = -1;
 
-	private bool justRelease;
+	internal bool justRelease;
 
-	private int keyTouchTab = -1;
+	internal int keyTouchTab = -1;
 
-	private int nTableItem;
+	internal int nTableItem;
 
 	public string[][] clansOption = new string[2][]
 	{
@@ -517,17 +517,17 @@ public class Panel : IActionListener, IChatable
 
 	public string clanReport = string.Empty;
 
-	private bool isHaveClan;
+	internal bool isHaveClan;
 
-	private Scroll scroll;
+	internal Scroll scroll;
 
-	private int cmvx;
+	internal int cmvx;
 
-	private int cmdx;
+	internal int cmdx;
 
-	private bool isSelectPlayerMenu;
+	internal bool isSelectPlayerMenu;
 
-	private string[] strStatus = new string[6]
+	internal string[] strStatus = new string[6]
 	{
 		mResources.follow,
 		mResources.defend,
@@ -537,11 +537,11 @@ public class Panel : IActionListener, IChatable
 		mResources.fusionForever
 	};
 
-	private static string log;
+	internal static string log;
 
-	private int tt;
+	internal int tt;
 
-	private int currentButtonPress;
+	internal int currentButtonPress;
 
 	public static long[] t_tiemnang = new long[14]
 	{
@@ -549,7 +549,7 @@ public class Panel : IActionListener, IChatable
 		110000000000L, 130000000000L, 150000000000L, 170000000000L
 	};
 
-	private int[] zoneColor = new int[3] { 43520, 14743570, 14155776 };
+	internal int[] zoneColor = new int[3] { 43520, 14743570, 14155776 };
 
 	public string[] combineInfo;
 
@@ -559,17 +559,17 @@ public class Panel : IActionListener, IChatable
 
 	public static int[] color2 = new int[3] { 4583423, 16719103, 16714764 };
 
-	private int sellectInventory;
+	internal int sellectInventory;
 
-	private Item itemInvenNew;
+	internal Item itemInvenNew;
 
-	private Effect eBanner;
+	internal Effect eBanner;
 
-	private static FrameImage screenTab6;
+	internal static FrameImage screenTab6;
 
-	private bool isUp;
+	internal bool isUp;
 
-	private int compare;
+	internal int compare;
 
 	public static string strWantToBuy = string.Empty;
 
@@ -623,25 +623,25 @@ public class Panel : IActionListener, IChatable
 
 	public int inforH;
 
-	private int yPaint;
+	internal int yPaint;
 
-	private int xMap;
+	internal int xMap;
 
-	private int yMap;
+	internal int yMap;
 
-	private int xMapTask;
+	internal int xMapTask;
 
-	private int yMapTask;
+	internal int yMapTask;
 
-	private int xMove;
+	internal int xMove;
 
-	private int yMove;
+	internal int yMove;
 
 	public static bool isPaintMap = true;
 
 	public bool isClose;
 
-	private int infoSelect;
+	internal int infoSelect;
 
 	public static MyVector vGameInfo = new MyVector(string.Empty);
 
@@ -649,17 +649,17 @@ public class Panel : IActionListener, IChatable
 
 	public bool isViewChatServer;
 
-	private int currInfoItem;
+	internal int currInfoItem;
 
 	public Char charInfo;
 
-	private bool isChangeZone;
+	internal bool isChangeZone;
 
-	private bool isKiguiXu;
+	internal bool isKiguiXu;
 
-	private bool isKiguiLuong;
+	internal bool isKiguiLuong;
 
-	private int delayKigui;
+	internal int delayKigui;
 
 	public sbyte combineSuccess = -1;
 
@@ -669,41 +669,41 @@ public class Panel : IActionListener, IChatable
 
 	public int yS;
 
-	private int rS;
+	internal int rS;
 
-	private int angleS;
+	internal int angleS;
 
-	private int angleO;
+	internal int angleO;
 
-	private int iAngleS;
+	internal int iAngleS;
 
-	private int iDotS;
+	internal int iDotS;
 
-	private int speed;
+	internal int speed;
 
-	private int[] xArgS;
+	internal int[] xArgS;
 
-	private int[] yArgS;
+	internal int[] yArgS;
 
-	private int[] xDotS;
+	internal int[] xDotS;
 
-	private int[] yDotS;
+	internal int[] yDotS;
 
-	private int time;
+	internal int time;
 
-	private int typeCombine;
+	internal int typeCombine;
 
-	private int countUpdate;
+	internal int countUpdate;
 
-	private int countR;
+	internal int countR;
 
-	private int countWait;
+	internal int countWait;
 
-	private bool isSpeedCombine;
+	internal bool isSpeedCombine;
 
-	private bool isCompleteEffCombine = true;
+	internal bool isCompleteEffCombine = true;
 
-	private bool isPaintCombine;
+	internal bool isPaintCombine;
 
 	public bool isDoneCombine = true;
 
@@ -764,13 +764,13 @@ public class Panel : IActionListener, IChatable
 
 	public const int color_item_black = 2039326;
 
-	private Image imgo_0;
+	internal Image imgo_0;
 
-	private Image imgo_1;
+	internal Image imgo_1;
 
-	private Image imgo_2;
+	internal Image imgo_2;
 
-	private Image imgo_3;
+	internal Image imgo_3;
 
 	public const int numItem = 20;
 
@@ -778,7 +778,7 @@ public class Panel : IActionListener, IChatable
 
 	public sbyte size_tab;
 
-	private bool isnewInventory;
+	internal bool isnewInventory;
 
 	public Panel()
 	{
@@ -863,7 +863,7 @@ public class Panel : IActionListener, IChatable
 		return -1;
 	}
 
-	private void setType(int position)
+	internal void setType(int position)
 	{
 		typeShop = -1;
 		W = WIDTH_PANEL;
@@ -1024,7 +1024,7 @@ public class Panel : IActionListener, IChatable
 			logChat.removeElementAt(logChat.size() - 1);
 	}
 
-	private bool IsNewMessage(string name)
+	internal bool IsNewMessage(string name)
 	{
 		return false;
 	}
@@ -1034,7 +1034,7 @@ public class Panel : IActionListener, IChatable
 		return false;
 	}
 
-	private void ClearNewMessage(string name)
+	internal void ClearNewMessage(string name)
 	{
 	}
 
@@ -1269,7 +1269,7 @@ public class Panel : IActionListener, IChatable
 		cmx = (cmtoX = 0);
 	}
 
-	private void setTabAuto()
+	internal void setTabAuto()
 	{
 		currentListLength = strAuto.Length;
 		ITEM_HEIGHT = 24;
@@ -1841,25 +1841,25 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void updateKeyAuto()
+	internal void updateKeyAuto()
 	{
 	}
 
-	private void updateKeyPetStatus()
-	{
-		updateKeyScrollView();
-	}
-
-	private void updateKeyPetSkill()
-	{
-	}
-
-	private void keyGiaodich()
+	internal void updateKeyPetStatus()
 	{
 		updateKeyScrollView();
 	}
 
-	private void updateKeyGiaoDich()
+	internal void updateKeyPetSkill()
+	{
+	}
+
+	internal void keyGiaodich()
+	{
+		updateKeyScrollView();
+	}
+
+	internal void updateKeyGiaoDich()
 	{
 		if (currentTabIndex == 0)
 		{
@@ -1872,17 +1872,17 @@ public class Panel : IActionListener, IChatable
 			keyGiaodich();
 	}
 
-	private void updateKeyTool()
+	internal void updateKeyTool()
 	{
 		updateKeyScrollView();
 	}
 
-	private void updateKeySkill()
+	internal void updateKeySkill()
 	{
 		updateKeyScrollView();
 	}
 
-	private void updateKeyClanIcon()
+	internal void updateKeyClanIcon()
 	{
 		updateKeyScrollView();
 	}
@@ -1939,7 +1939,7 @@ public class Panel : IActionListener, IChatable
 		charMenu = cGD;
 	}
 
-	private void paintGiaoDich(mGraphics g, bool isMe)
+	internal void paintGiaoDich(mGraphics g, bool isMe)
 	{
 		g.setColor(16711680);
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
@@ -2128,7 +2128,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void updateKeyMap()
+	internal void updateKeyMap()
 	{
 		if (GameCanvas.keyHold[(!Main.isPC) ? 2 : 21])
 		{
@@ -2190,7 +2190,7 @@ public class Panel : IActionListener, IChatable
 			cmyMap = cmyMapLim;
 	}
 
-	private void updateKeyCombine()
+	internal void updateKeyCombine()
 	{
 		if (currentTabIndex == 0)
 		{
@@ -2206,7 +2206,7 @@ public class Panel : IActionListener, IChatable
 			updateKeyScrollView();
 	}
 
-	private void updateKeyQuest()
+	internal void updateKeyQuest()
 	{
 		if (GameCanvas.keyHold[(!Main.isPC) ? 2 : 21])
 			cmyQuest -= 5;
@@ -2243,7 +2243,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void getCurrClanOtion()
+	internal void getCurrClanOtion()
 	{
 		isClanOption = false;
 		if (type != 0 || mainTabName.Length != 5 || currentTabIndex != 3)
@@ -2270,7 +2270,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void updateKeyClansOption()
+	internal void updateKeyClansOption()
 	{
 		if (currClanOption == null)
 			return;
@@ -2294,13 +2294,13 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void updateKeyClans()
+	internal void updateKeyClans()
 	{
 		updateKeyScrollView();
 		updateKeyClansOption();
 	}
 
-	private void checkOptionSelect()
+	internal void checkOptionSelect()
 	{
 		try
 		{
@@ -2359,7 +2359,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void updateKeyScrollView()
+	internal void updateKeyScrollView()
 	{
 		if (currentListLength <= 0)
 			return;
@@ -2564,7 +2564,7 @@ public class Panel : IActionListener, IChatable
 		return null;
 	}
 
-	private void updateKeyInTabBar()
+	internal void updateKeyInTabBar()
 	{
 		if ((scroll != null && scroll.pointerIsDowning) || pointerIsDowning)
 			return;
@@ -2790,7 +2790,7 @@ public class Panel : IActionListener, IChatable
 		selected = lastSelect[currentTabIndex];
 	}
 
-	private void setTabPetStatus()
+	internal void setTabPetStatus()
 	{
 		currentListLength = strStatus.Length;
 		ITEM_HEIGHT = 24;
@@ -2805,11 +2805,11 @@ public class Panel : IActionListener, IChatable
 			cmy = (cmtoY = cmyLim);
 	}
 
-	private void setTabPetSkill()
+	internal void setTabPetSkill()
 	{
 	}
 
-	private void setTabTool()
+	internal void setTabTool()
 	{
 		SoundMn.gI().getSoundOption();
 		currentListLength = strTool.Length;
@@ -2953,7 +2953,7 @@ public class Panel : IActionListener, IChatable
 		cmx = (cmtoX = 0);
 	}
 
-	private void setTabMessage()
+	internal void setTabMessage()
 	{
 		ITEM_HEIGHT = 24;
 		initLogMessage();
@@ -2978,7 +2978,7 @@ public class Panel : IActionListener, IChatable
 		selected = (GameCanvas.isTouch ? (-1) : 0);
 	}
 
-	private void setTabSkill()
+	internal void setTabSkill()
 	{
 		ITEM_HEIGHT = 30;
 		currentListLength = Char.myCharz().nClass.skillTemplates.Length + 6;
@@ -2993,7 +2993,7 @@ public class Panel : IActionListener, IChatable
 		selected = (GameCanvas.isTouch ? (-1) : 0);
 	}
 
-	private void setTabMapTrans()
+	internal void setTabMapTrans()
 	{
 		ITEM_HEIGHT = 24;
 		currentListLength = mapNames.Length;
@@ -3002,7 +3002,7 @@ public class Panel : IActionListener, IChatable
 		selected = (GameCanvas.isTouch ? (-1) : 0);
 	}
 
-	private void setTabZone()
+	internal void setTabZone()
 	{
 		ITEM_HEIGHT = 24;
 		currentListLength = GameScr.gI().zones.Length;
@@ -3011,7 +3011,7 @@ public class Panel : IActionListener, IChatable
 		selected = (GameCanvas.isTouch ? (-1) : 0);
 	}
 
-	private void setTabBox()
+	internal void setTabBox()
 	{
 		currentListLength = checkCurrentListLength(Char.myCharz().arrItemBox.Length);
 		ITEM_HEIGHT = 24;
@@ -3026,7 +3026,7 @@ public class Panel : IActionListener, IChatable
 		selected = (GameCanvas.isTouch ? (-1) : 0);
 	}
 
-	private void setTabPetInventory()
+	internal void setTabPetInventory()
 	{
 		ITEM_HEIGHT = 30;
 		Item[] arrItemBody = Char.myPetz().arrItemBody;
@@ -3043,7 +3043,7 @@ public class Panel : IActionListener, IChatable
 		selected = (GameCanvas.isTouch ? (-1) : 0);
 	}
 
-	private void setTabInventory(bool resetSelect)
+	internal void setTabInventory(bool resetSelect)
 	{
 		if (isnewInventory)
 		{
@@ -3069,7 +3069,7 @@ public class Panel : IActionListener, IChatable
 			selected = (GameCanvas.isTouch ? (-1) : 0);
 	}
 
-	private void setTabMap()
+	internal void setTabMap()
 	{
 		if (!isPaintMap)
 			return;
@@ -3106,7 +3106,7 @@ public class Panel : IActionListener, IChatable
 		GC.Collect();
 	}
 
-	private void setTabTask()
+	internal void setTabTask()
 	{
 		cmyQuest = 0;
 	}
@@ -3143,7 +3143,7 @@ public class Panel : IActionListener, IChatable
 			cmx += cmdx >> 3;
 			cmdx &= 15;
 		}
-		if (Math.abs(cmtoX - cmx) < 10)
+		if (Math2.abs(cmtoX - cmx) < 10)
 			cmx = cmtoX;
 		if (isClose)
 		{
@@ -3458,7 +3458,7 @@ public class Panel : IActionListener, IChatable
 		g.translate(-cmx, 0);
 	}
 
-	private void paintShop(mGraphics g)
+	internal void paintShop(mGraphics g)
 	{
 		try
 		{
@@ -3689,11 +3689,11 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void paintAuto(mGraphics g)
+	internal void paintAuto(mGraphics g)
 	{
 	}
 
-	private void paintPetStatus(mGraphics g)
+	internal void paintPetStatus(mGraphics g)
 	{
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
 		g.translate(0, -cmy);
@@ -3713,11 +3713,11 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void paintPetSkill()
+	internal void paintPetSkill()
 	{
 	}
 
-	private void paintPetInventory(mGraphics g)
+	internal void paintPetInventory(mGraphics g)
 	{
 		g.setColor(16711680);
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
@@ -3844,7 +3844,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void paintScrollArrow(mGraphics g)
+	internal void paintScrollArrow(mGraphics g)
 	{
 		g.translate(-g.getTranslateX(), -g.getTranslateY());
 		if ((cmy > 24 && currentListLength > 0) || (Equals(GameCanvas.panel) && typeShop == 2 && maxPageShop[currentTabIndex] > 1))
@@ -3853,7 +3853,7 @@ public class Panel : IActionListener, IChatable
 			g.drawRegion(Mob.imgHP, 0, 0, 9, 6, 0, xScroll + wScroll - 12, yScroll + hScroll - 8, 0);
 	}
 
-	private void paintTools(mGraphics g)
+	internal void paintTools(mGraphics g)
 	{
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
 		g.translate(0, -cmy);
@@ -3883,7 +3883,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void paintGameSubInfo(mGraphics g)
+	internal void paintGameSubInfo(mGraphics g)
 	{
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
 		g.translate(0, -cmy);
@@ -3899,7 +3899,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void paintGameInfo(mGraphics g)
+	internal void paintGameInfo(mGraphics g)
 	{
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
 		g.translate(0, -cmy);
@@ -3922,7 +3922,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void paintSkill(mGraphics g)
+	internal void paintSkill(mGraphics g)
 	{
 		g.setColor(16711680);
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
@@ -4046,7 +4046,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void paintMapTrans(mGraphics g)
+	internal void paintMapTrans(mGraphics g)
 	{
 		g.setColor(16711680);
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
@@ -4072,7 +4072,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void paintZone(mGraphics g)
+	internal void paintZone(mGraphics g)
 	{
 		g.setColor(16711680);
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
@@ -4112,7 +4112,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void paintSpeacialSkill(mGraphics g)
+	internal void paintSpeacialSkill(mGraphics g)
 	{
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
 		g.translate(0, -cmy);
@@ -4153,7 +4153,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void paintBox(mGraphics g)
+	internal void paintBox(mGraphics g)
 	{
 		g.setColor(16711680);
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
@@ -4301,7 +4301,7 @@ public class Panel : IActionListener, IChatable
 		return clans[selected - 2];
 	}
 
-	private void paintLogChat(mGraphics g)
+	internal void paintLogChat(mGraphics g)
 	{
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
 		g.translate(0, -cmy);
@@ -4350,7 +4350,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void paintFlagChange(mGraphics g)
+	internal void paintFlagChange(mGraphics g)
 	{
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
 		g.translate(0, -cmy);
@@ -4387,7 +4387,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void paintEnemy(mGraphics g)
+	internal void paintEnemy(mGraphics g)
 	{
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
 		g.translate(0, -cmy);
@@ -4434,7 +4434,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void paintFriend(mGraphics g)
+	internal void paintFriend(mGraphics g)
 	{
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
 		g.translate(0, -cmy);
@@ -4508,7 +4508,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void paintClans(mGraphics g)
+	internal void paintClans(mGraphics g)
 	{
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
 		g.translate(-cmx, -cmy);
@@ -4645,7 +4645,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void paintArchivement(mGraphics g)
+	internal void paintArchivement(mGraphics g)
 	{
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
 		g.translate(0, -cmy);
@@ -4698,7 +4698,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void paintCombine(mGraphics g)
+	internal void paintCombine(mGraphics g)
 	{
 		g.setColor(16711680);
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
@@ -4831,7 +4831,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void paintInventory(mGraphics g)
+	internal void paintInventory(mGraphics g)
 	{
 		bool flag = true;
 		if (flag && isnewInventory)
@@ -5193,7 +5193,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void paintTab(mGraphics g)
+	internal void paintTab(mGraphics g)
 	{
 		if (type == 23 || type == 24)
 		{
@@ -5351,7 +5351,7 @@ public class Panel : IActionListener, IChatable
 		g.fillRect(1, 78, W - 2, 1);
 	}
 
-	private void paintBottomMoneyInfo(mGraphics g)
+	internal void paintBottomMoneyInfo(mGraphics g)
 	{
 		if (type != 13 || (currentTabIndex != 2 && !Equals(GameCanvas.panel2)))
 		{
@@ -5369,7 +5369,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void paintClanInfo(mGraphics g)
+	internal void paintClanInfo(mGraphics g)
 	{
 		if (Char.myCharz().clan == null)
 		{
@@ -5400,7 +5400,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void paintToolInfo(mGraphics g)
+	internal void paintToolInfo(mGraphics g)
 	{
 		mFont.tahoma_7b_white.drawString(g, mResources.dragon_ball + " " + GameMidlet.VERSION, 60, 4, mFont.LEFT, mFont.tahoma_7b_dark);
 		mFont.tahoma_7_yellow.drawString(g, mResources.character + ": " + Char.myCharz().cName, 60, 16, mFont.LEFT, mFont.tahoma_7_grey);
@@ -5408,7 +5408,7 @@ public class Panel : IActionListener, IChatable
 		mFont.tahoma_7_yellow.drawString(g, mResources.account_server + " " + ServerListScreen.nameServer[ServerListScreen.ipSelect] + ": " + text, 60, 27, mFont.LEFT, mFont.tahoma_7_grey);
 	}
 
-	private void paintGiaoDichInfo(mGraphics g)
+	internal void paintGiaoDichInfo(mGraphics g)
 	{
 		mFont.tahoma_7_yellow.drawString(g, mResources.select_item, 60, 4, mFont.LEFT, mFont.tahoma_7_grey);
 		mFont.tahoma_7_yellow.drawString(g, mResources.lock_trade, 60, 16, mFont.LEFT, mFont.tahoma_7_grey);
@@ -5416,12 +5416,12 @@ public class Panel : IActionListener, IChatable
 		mFont.tahoma_7_yellow.drawString(g, mResources.press_done, 60, 38, mFont.LEFT, mFont.tahoma_7_grey);
 	}
 
-	private void paintMyInfo(mGraphics g)
+	internal void paintMyInfo(mGraphics g)
 	{
 		paintCharInfo(g, Char.myCharz());
 	}
 
-	private void paintPetInfo(mGraphics g)
+	internal void paintPetInfo(mGraphics g)
 	{
 		mFont.tahoma_7_yellow.drawString(g, mResources.power + ": " + NinjaUtil.getMoneys(Char.myPetz().cPower), X + 60, 4, mFont.LEFT, mFont.tahoma_7_grey);
 		if (Char.myPetz().cPower > 0)
@@ -5439,7 +5439,7 @@ public class Panel : IActionListener, IChatable
 		g.setClip(0, 0, GameCanvas.w, GameCanvas.h);
 	}
 
-	private void paintCharInfo(mGraphics g, Char c)
+	internal void paintCharInfo(mGraphics g, Char c)
 	{
 		mFont.tahoma_7b_white.drawString(g, ((GameScr.isNewMember == 1) ? "       " : string.Empty) + c.cName, X + 60, 4, mFont.LEFT, mFont.tahoma_7b_dark);
 		if (GameScr.isNewMember == 1)
@@ -5458,7 +5458,7 @@ public class Panel : IActionListener, IChatable
 		mFont.tahoma_7_yellow.drawString(g, mResources.power + ": " + NinjaUtil.getMoneys(c.cPower), X + 60, 38, mFont.LEFT, mFont.tahoma_7_grey);
 	}
 
-	private void paintCharInfo(mGraphics g, Char c, int x, int y)
+	internal void paintCharInfo(mGraphics g, Char c, int x, int y)
 	{
 		mFont.tahoma_7b_white.drawString(g, ((GameScr.isNewMember == 1) ? "       " : string.Empty) + c.cName, x + 60, y + 4, mFont.LEFT, mFont.tahoma_7b_dark);
 		if (GameScr.isNewMember == 1)
@@ -5475,7 +5475,7 @@ public class Panel : IActionListener, IChatable
 		mFont.tahoma_7_yellow.drawString(g, mResources.power + ": " + NinjaUtil.getMoneys(c.cPower), x + 60, y + 38, mFont.LEFT, mFont.tahoma_7_grey);
 	}
 
-	private void paintZoneInfo(mGraphics g)
+	internal void paintZoneInfo(mGraphics g)
 	{
 		mFont.tahoma_7b_white.drawString(g, mResources.zone + " " + TileMap.zoneID, 60, 4, mFont.LEFT, mFont.tahoma_7b_dark);
 		mFont.tahoma_7_yellow.drawString(g, TileMap.mapName, 60, 16, mFont.LEFT, mFont.tahoma_7_grey);
@@ -5537,7 +5537,7 @@ public class Panel : IActionListener, IChatable
 		return 0;
 	}
 
-	private void paintMapInfo(mGraphics g)
+	internal void paintMapInfo(mGraphics g)
 	{
 		mFont.tahoma_7b_white.drawString(g, mResources.MENUGENDER[TileMap.planetID], 60, 4, mFont.LEFT);
 		string text = string.Empty;
@@ -5551,7 +5551,7 @@ public class Panel : IActionListener, IChatable
 			mFont.tahoma_7_yellow.drawString(g, mResources.random, 60, 38, mFont.LEFT);
 	}
 
-	private void paintShopInfo(mGraphics g)
+	internal void paintShopInfo(mGraphics g)
 	{
 		if (currentTabIndex == currentTabName.Length - 1 && GameCanvas.panel2 == null)
 			paintMyInfo(g);
@@ -5586,14 +5586,14 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void paintItemBoxInfo(mGraphics g)
+	internal void paintItemBoxInfo(mGraphics g)
 	{
 		string st = mResources.used + ": " + hasUse + "/" + Char.myCharz().arrItemBox.Length + " " + mResources.place;
 		mFont.tahoma_7b_white.drawString(g, mResources.chest, 60, 4, 0);
 		mFont.tahoma_7_yellow.drawString(g, st, 60, 16, 0);
 	}
 
-	private void paintSkillInfo(mGraphics g)
+	internal void paintSkillInfo(mGraphics g)
 	{
 		mFont.tahoma_7_white.drawString(g, "Top " + Char.myCharz().rank, X + 45 + (W - 50) / 2, 2, mFont.CENTER);
 		mFont.tahoma_7_yellow.drawString(g, mResources.potential_point, X + 45 + (W - 50) / 2, 14, mFont.CENTER);
@@ -5601,7 +5601,7 @@ public class Panel : IActionListener, IChatable
 		mFont.tahoma_7_yellow.drawString(g, mResources.active_point + ": " + NinjaUtil.getMoneys(Char.myCharz().cNangdong), X + ((GameCanvas.gameTick % 20 > 10) ? (GameCanvas.gameTick % 4 / 2) : 0) + 45 + (W - 50) / 2, 38, mFont.CENTER);
 	}
 
-	private void paintItemBodyBagInfo(mGraphics g)
+	internal void paintItemBodyBagInfo(mGraphics g)
 	{
 		mFont.tahoma_7_yellow.drawString(g, mResources.HP + ": " + Char.myCharz().cHP + " / " + Char.myCharz().cHPFull, X + 60, 2, mFont.LEFT, mFont.tahoma_7_grey);
 		mFont.tahoma_7_yellow.drawString(g, mResources.KI + ": " + Char.myCharz().cMP + " / " + Char.myCharz().cMPFull, X + 60, 14, mFont.LEFT, mFont.tahoma_7_grey);
@@ -5609,7 +5609,7 @@ public class Panel : IActionListener, IChatable
 		mFont.tahoma_7_yellow.drawString(g, mResources.armor + ": " + Char.myCharz().cDefull + ", " + mResources.critical + ": " + Char.myCharz().cCriticalFull + "%", X + 60, 38, mFont.LEFT, mFont.tahoma_7_grey);
 	}
 
-	private void paintItemBodyBagInfo(mGraphics g, int x, int y)
+	internal void paintItemBodyBagInfo(mGraphics g, int x, int y)
 	{
 		mFont.tahoma_7_yellow.drawString(g, mResources.HP + ": " + Char.myCharz().cHP + " / " + Char.myCharz().cHPFull, x, y + 2, mFont.LEFT, mFont.tahoma_7_grey);
 		mFont.tahoma_7_yellow.drawString(g, mResources.KI + ": " + Char.myCharz().cMP + " / " + Char.myCharz().cMPFull, x, y + 14, mFont.LEFT, mFont.tahoma_7_grey);
@@ -5617,7 +5617,7 @@ public class Panel : IActionListener, IChatable
 		mFont.tahoma_7_yellow.drawString(g, mResources.armor + ": " + Char.myCharz().cDefull + ", " + mResources.critical + ": " + Char.myCharz().cCriticalFull + "%", x, y + 38, mFont.LEFT, mFont.tahoma_7_grey);
 	}
 
-	private void paintTopInfo(mGraphics g)
+	internal void paintTopInfo(mGraphics g)
 	{
 		g.setClip(X + 1, Y, W - 2, yScroll - 2);
 		g.setColor(9993045);
@@ -5805,32 +5805,27 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void paintChatManager(mGraphics g)
+	internal void paintChatManager(mGraphics g)
 	{
 	}
 
-	private void paintChatPlayer(mGraphics g)
+	internal void paintChatPlayer(mGraphics g)
 	{
 	}
 
-	private string getStatus(int status)
+	internal string getStatus(int status)
 	{
-		switch (status)
+		return status switch
 		{
-		case 0:
-			return mResources.follow;
-		case 1:
-			return mResources.defend;
-		case 2:
-			return mResources.attack;
-		case 3:
-			return mResources.gohome;
-		default:
-			return "aaa";
-		}
+			0 => mResources.follow, 
+			1 => mResources.defend, 
+			2 => mResources.attack, 
+			3 => mResources.gohome, 
+			_ => "aaa", 
+		};
 	}
 
-	private void paintPetStatusInfo(mGraphics g)
+	internal void paintPetStatusInfo(mGraphics g)
 	{
 		mFont.tahoma_7b_white.drawString(g, "HP: " + Char.myPetz().cHP + "/" + Char.myPetz().cHPFull, X + 60, 4, mFont.LEFT, mFont.tahoma_7b_dark);
 		mFont.tahoma_7b_white.drawString(g, "MP: " + Char.myPetz().cMP + "/" + Char.myPetz().cMPFull, X + 60, 16, mFont.LEFT, mFont.tahoma_7b_dark);
@@ -5838,7 +5833,7 @@ public class Panel : IActionListener, IChatable
 		mFont.tahoma_7_yellow.drawString(g, mResources.status + ": " + strStatus[Char.myPetz().petStatus], X + 60, 38, mFont.LEFT, mFont.tahoma_7_grey);
 	}
 
-	private void paintCombineInfo(mGraphics g)
+	internal void paintCombineInfo(mGraphics g)
 	{
 		if (combineTopInfo != null)
 		{
@@ -5849,7 +5844,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void paintInfomation(mGraphics g)
+	internal void paintInfomation(mGraphics g)
 	{
 	}
 
@@ -6453,11 +6448,11 @@ public class Panel : IActionListener, IChatable
 		updateCombineEff();
 	}
 
-	private void doSpeacialSkill()
+	internal void doSpeacialSkill()
 	{
 	}
 
-	private void doFireGameInfo()
+	internal void doFireGameInfo()
 	{
 		if (selected != -1)
 		{
@@ -6468,11 +6463,11 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void doFireAuto()
+	internal void doFireAuto()
 	{
 	}
 
-	private void doFirePetMain()
+	internal void doFirePetMain()
 	{
 		if (currentTabIndex == 0)
 		{
@@ -6495,7 +6490,7 @@ public class Panel : IActionListener, IChatable
 			doFireInventory();
 	}
 
-	private void doFirePetStatus()
+	internal void doFirePetStatus()
 	{
 		if (selected == -1)
 			return;
@@ -6509,7 +6504,7 @@ public class Panel : IActionListener, IChatable
 			Char.myPetz().petStatus = (sbyte)selected;
 	}
 
-	private void doFireTop()
+	internal void doFireTop()
 	{
 		if (selected >= -1)
 		{
@@ -6525,12 +6520,12 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void doFireMapTrans()
+	internal void doFireMapTrans()
 	{
 		doFireZone();
 	}
 
-	private void doFireGiaoDich()
+	internal void doFireGiaoDich()
 	{
 		if (currentTabIndex == 0 && Equals(GameCanvas.panel))
 		{
@@ -6604,7 +6599,7 @@ public class Panel : IActionListener, IChatable
 			selected = -1;
 	}
 
-	private void doFireCombine()
+	internal void doFireCombine()
 	{
 		if (currentTabIndex == 0)
 		{
@@ -6635,7 +6630,7 @@ public class Panel : IActionListener, IChatable
 			doFireInventory();
 	}
 
-	private void doFirePlayerMenu()
+	internal void doFirePlayerMenu()
 	{
 		if (selected != -1)
 		{
@@ -6644,7 +6639,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void doFireShop()
+	internal void doFireShop()
 	{
 		currItem = null;
 		if (selected < 0)
@@ -6752,7 +6747,7 @@ public class Panel : IActionListener, IChatable
 			cp = null;
 	}
 
-	private void doFireArchivement()
+	internal void doFireArchivement()
 	{
 		if (selected >= 0 && Char.myCharz().arrArchive[selected].isFinish && !Char.myCharz().arrArchive[selected].isRecieve)
 		{
@@ -6765,7 +6760,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void doFireInventory()
+	internal void doFireInventory()
 	{
 		Res.outz("fire inventory");
 		if (Char.myCharz().statusMe == 14)
@@ -6856,7 +6851,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void doRada()
+	internal void doRada()
 	{
 		hide();
 		if (RadarScr.list == null || RadarScr.list.size() == 0)
@@ -6868,7 +6863,7 @@ public class Panel : IActionListener, IChatable
 			RadarScr.gI().switchToMe();
 	}
 
-	private void doFireTool()
+	internal void doFireTool()
 	{
 		if (selected < 0)
 			return;
@@ -7016,7 +7011,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void setTypeGameSubInfo()
+	internal void setTypeGameSubInfo()
 	{
 		string content = ((GameInfo)vGameInfo.elementAt(infoSelect)).content;
 		contenInfo = mFont.tahoma_7_grey.splitFontArray(content, wScroll - 40);
@@ -7034,7 +7029,7 @@ public class Panel : IActionListener, IChatable
 		setType(0);
 	}
 
-	private void setTypeGameInfo()
+	internal void setTypeGameInfo()
 	{
 		currentListLength = vGameInfo.size();
 		ITEM_HEIGHT = 24;
@@ -7050,14 +7045,14 @@ public class Panel : IActionListener, IChatable
 		setType(0);
 	}
 
-	private void doFirePet()
+	internal void doFirePet()
 	{
 		InfoDlg.showWait();
 		Service.gI().petInfo();
 		timeShow = 20;
 	}
 
-	private void searchClan()
+	internal void searchClan()
 	{
 		chatTField.strChat = mResources.input_clan_name;
 		chatTField.tfChat.name = mResources.clan_name;
@@ -7071,7 +7066,7 @@ public class Panel : IActionListener, IChatable
 			chatTField.startChat2(this, string.Empty);
 	}
 
-	private void chatClan()
+	internal void chatClan()
 	{
 		chatTField.strChat = mResources.chat_clan;
 		chatTField.tfChat.name = mResources.CHAT;
@@ -7166,7 +7161,7 @@ public class Panel : IActionListener, IChatable
 		chatTField.isShow = false;
 	}
 
-	private void addFriend(InfoItem info)
+	internal void addFriend(InfoItem info)
 	{
 		string text = string.Concat("|0|1|" + info.charInfo.cName, "\n");
 		string text2 = ((!info.isOnline) ? (text + "|3|1|" + mResources.is_offline) : (text + "|4|1|" + mResources.is_online)) + "\n--";
@@ -7177,7 +7172,7 @@ public class Panel : IActionListener, IChatable
 		currItem = null;
 	}
 
-	private void doFireEnemy()
+	internal void doFireEnemy()
 	{
 		if (selected >= 0 && vEnemy.size() != 0)
 		{
@@ -7190,7 +7185,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void doFireFriend()
+	internal void doFireFriend()
 	{
 		if (selected >= 0 && vFriend.size() != 0)
 		{
@@ -7204,7 +7199,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void doFireChangeFlag()
+	internal void doFireChangeFlag()
 	{
 		if (selected >= 0)
 		{
@@ -7216,7 +7211,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void doFireLogMessage()
+	internal void doFireLogMessage()
 	{
 		if (selected == 0)
 		{
@@ -7236,7 +7231,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void doFireClanOption()
+	internal void doFireClanOption()
 	{
 		try
 		{
@@ -7453,7 +7448,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void doFireMain()
+	internal void doFireMain()
 	{
 		try
 		{
@@ -7479,7 +7474,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void doFireSkill()
+	internal void doFireSkill()
 	{
 		if (selected < 0)
 			return;
@@ -7654,7 +7649,7 @@ public class Panel : IActionListener, IChatable
 		addSkillDetail(skillTemplate, skill, skill2);
 	}
 
-	private void addLogMessage(InfoItem info)
+	internal void addLogMessage(InfoItem info)
 	{
 		string chat = string.Concat(string.Concat(string.Concat("|0|1|" + info.charInfo.cName, "\n"), "\n--"), "\n|5|", Res.split(info.s, "|", 0)[2]);
 		cp = new ChatPopup();
@@ -7663,7 +7658,7 @@ public class Panel : IActionListener, IChatable
 		currItem = null;
 	}
 
-	private void addSkillDetail2(int type)
+	internal void addSkillDetail2(int type)
 	{
 		string empty = string.Empty;
 		int num = 0;
@@ -7693,11 +7688,11 @@ public class Panel : IActionListener, IChatable
 		popUpDetailInit(cp, empty);
 	}
 
-	private void doFireClanIcon()
+	internal void doFireClanIcon()
 	{
 	}
 
-	private void doFireMap()
+	internal void doFireMap()
 	{
 		if (imgMap != null)
 		{
@@ -7711,7 +7706,7 @@ public class Panel : IActionListener, IChatable
 		cmx = (cmtoX = 0);
 	}
 
-	private void doFireZone()
+	internal void doFireZone()
 	{
 		if (selected != -1)
 		{
@@ -7726,7 +7721,7 @@ public class Panel : IActionListener, IChatable
 		cp.says[cp.says.Length - 1] = mResources.received + " " + recieve + "/" + maxCap;
 	}
 
-	private void doFireBox()
+	internal void doFireBox()
 	{
 		if (selected < 0)
 			return;
@@ -8622,7 +8617,7 @@ public class Panel : IActionListener, IChatable
 		addTextCombineNPC(idNPC, mResources.combineSpell);
 	}
 
-	private void updateCombineEff()
+	internal void updateCombineEff()
 	{
 		countUpdate--;
 		if (countUpdate < 0)
@@ -8840,7 +8835,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void setDotStar()
+	internal void setDotStar()
 	{
 		for (int i = 0; i < yArgS.Length; i++)
 		{
@@ -8923,7 +8918,7 @@ public class Panel : IActionListener, IChatable
 		cmx = (cmtoX = 0);
 	}
 
-	private void setTabOption()
+	internal void setTabOption()
 	{
 		SoundMn.gI().getStrOption();
 		currentListLength = strCauhinh.Length;
@@ -8939,7 +8934,7 @@ public class Panel : IActionListener, IChatable
 			cmy = (cmtoY = cmyLim);
 	}
 
-	private void paintOption(mGraphics g)
+	internal void paintOption(mGraphics g)
 	{
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
 		g.translate(0, -cmy);
@@ -8959,7 +8954,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void doFireOption()
+	internal void doFireOption()
 	{
 		if (selected < 0)
 			return;
@@ -9000,7 +8995,7 @@ public class Panel : IActionListener, IChatable
 		cmx = (cmtoX = 0);
 	}
 
-	private void setTabAccount()
+	internal void setTabAccount()
 	{
 		if (Main.IphoneVersionApp)
 		{
@@ -9076,7 +9071,7 @@ public class Panel : IActionListener, IChatable
 			cmy = (cmtoY = cmyLim);
 	}
 
-	private void paintAccount(mGraphics g)
+	internal void paintAccount(mGraphics g)
 	{
 		g.setClip(xScroll, yScroll, wScroll, hScroll);
 		g.translate(0, -cmy);
@@ -9096,7 +9091,7 @@ public class Panel : IActionListener, IChatable
 		paintScrollArrow(g);
 	}
 
-	private void doFireAccount()
+	internal void doFireAccount()
 	{
 		if (selected < 0)
 			return;
@@ -9171,7 +9166,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void updateKeyOption()
+	internal void updateKeyOption()
 	{
 		updateKeyScrollView();
 	}
@@ -9184,7 +9179,7 @@ public class Panel : IActionListener, IChatable
 		currentTabIndex = 0;
 	}
 
-	private void setTabSpeacialSkill()
+	internal void setTabSpeacialSkill()
 	{
 		ITEM_HEIGHT = 24;
 		currentListLength = Char.myCharz().infoSpeacialSkill[currentTabIndex].Length;
@@ -9206,7 +9201,7 @@ public class Panel : IActionListener, IChatable
 		return false;
 	}
 
-	private void doNotiRuby(int type)
+	internal void doNotiRuby(int type)
 	{
 		try
 		{
@@ -9248,7 +9243,7 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private static int upgradeEffectX(int dk, int tick, int wItem, int hitem, int wSize)
+	internal static int upgradeEffectX(int dk, int tick, int wItem, int hitem, int wSize)
 	{
 		int num = (tick + dk) % ((wItem << 1) + (hitem << 1));
 		if (0 <= num && num < wItem)
@@ -9260,7 +9255,7 @@ public class Panel : IActionListener, IChatable
 		return 0;
 	}
 
-	private static int upgradeEffectY(int dk, int tick, int wItem, int hitem, int wSize)
+	internal static int upgradeEffectY(int dk, int tick, int wItem, int hitem, int wSize)
 	{
 		int num = (tick + dk) % ((wItem << 1) + (hitem << 1));
 		if (0 <= num && num < wItem)
@@ -9274,23 +9269,16 @@ public class Panel : IActionListener, IChatable
 
 	public static int GetColor_ItemBg(int id)
 	{
-		switch (id)
+		return id switch
 		{
-		case 4:
-			return 1269146;
-		case 1:
-			return 2786816;
-		case 5:
-			return 13279744;
-		case 3:
-			return 12537346;
-		case 2:
-			return 7078041;
-		case 6:
-			return 11599872;
-		default:
-			return -1;
-		}
+			4 => 1269146, 
+			1 => 2786816, 
+			5 => 13279744, 
+			3 => 12537346, 
+			2 => 7078041, 
+			6 => 11599872, 
+			_ => -1, 
+		};
 	}
 
 	public static sbyte GetColor_Item_Upgrade(int lv)
@@ -9409,70 +9397,53 @@ public class Panel : IActionListener, IChatable
 	public static mFont setTextColor(int id, int type)
 	{
 		if (type == 0)
-		{
-			switch (id)
+			return id switch
 			{
-			case 0:
-				return mFont.bigNumber_While;
-			case 1:
-				return mFont.bigNumber_green;
-			case 3:
-				return mFont.bigNumber_orange;
-			case 4:
-				return mFont.bigNumber_blue;
-			case 5:
-				return mFont.bigNumber_yellow;
-			case 6:
-				return mFont.bigNumber_red;
-			default:
-				return mFont.bigNumber_While;
-			}
-		}
-		switch (id)
+				0 => mFont.bigNumber_While, 
+				1 => mFont.bigNumber_green, 
+				3 => mFont.bigNumber_orange, 
+				4 => mFont.bigNumber_blue, 
+				5 => mFont.bigNumber_yellow, 
+				6 => mFont.bigNumber_red, 
+				_ => mFont.bigNumber_While, 
+			};
+		return id switch
 		{
-		case 0:
-			return mFont.tahoma_7b_white;
-		case 1:
-			return mFont.tahoma_7b_green;
-		case 3:
-			return mFont.tahoma_7b_yellowSmall2;
-		case 4:
-			return mFont.tahoma_7b_blue;
-		case 5:
-			return mFont.tahoma_7b_yellow;
-		case 6:
-			return mFont.tahoma_7b_red;
-		case 7:
-			return mFont.tahoma_7b_dark;
-		default:
-			return mFont.tahoma_7b_white;
-		}
+			0 => mFont.tahoma_7b_white, 
+			1 => mFont.tahoma_7b_green, 
+			3 => mFont.tahoma_7b_yellowSmall2, 
+			4 => mFont.tahoma_7b_blue, 
+			5 => mFont.tahoma_7b_yellow, 
+			6 => mFont.tahoma_7b_red, 
+			7 => mFont.tahoma_7b_dark, 
+			_ => mFont.tahoma_7b_white, 
+		};
 	}
 
-	private bool GetInventorySelect_isbody(int select, int subSelect, Item[] arrItem)
+	internal bool GetInventorySelect_isbody(int select, int subSelect, Item[] arrItem)
 	{
 		int num = select - 1 + subSelect * 20;
 		return subSelect == 0 && num < arrItem.Length;
 	}
 
-	private int GetInventorySelect_body(int select, int subSelect)
+	internal int GetInventorySelect_body(int select, int subSelect)
 	{
 		return select - 1 + subSelect * 20;
 	}
 
-	private int GetInventorySelect_bag(int select, int subSelect, Item[] arrItem)
+	internal int GetInventorySelect_bag(int select, int subSelect, Item[] arrItem)
 	{
 		return select - 1 + subSelect * 20 - arrItem.Length;
 	}
 
-	private bool isTabInven()
+	internal bool isTabInven()
 	{
 		if ((type == 0 && currentTabIndex == 1) || (type == 7 && currentTabIndex == 0))
 			return true;
 		return false;
 	}
 
-	private void updateKeyInvenTab()
+	internal void updateKeyInvenTab()
 	{
 		if (selected < 0)
 			return;
@@ -9510,14 +9481,14 @@ public class Panel : IActionListener, IChatable
 		}
 	}
 
-	private void updateKeyInventory()
+	internal void updateKeyInventory()
 	{
 		updateKeyScrollView();
 		if (selected == 0)
 			updateKeyInvenTab();
 	}
 
-	private bool IsTabOption()
+	internal bool IsTabOption()
 	{
 		if (size_tab > 0)
 		{
@@ -9534,7 +9505,7 @@ public class Panel : IActionListener, IChatable
 		return false;
 	}
 
-	private int checkCurrentListLength(int arrLength)
+	internal int checkCurrentListLength(int arrLength)
 	{
 		int num = 20;
 		int num2 = arrLength / 20 + ((arrLength % 20 > 0) ? 1 : 0);
@@ -9546,7 +9517,7 @@ public class Panel : IActionListener, IChatable
 		return num + 1;
 	}
 
-	private void setNewSelected(int arrLength, bool resetSelect)
+	internal void setNewSelected(int arrLength, bool resetSelect)
 	{
 		int num = arrLength / 20 + ((arrLength % 20 > 0) ? 1 : 0);
 		int num2 = xScroll;

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GameMidlet
 {
-	public static string IP = "minebay.vn";
+	public static string IP = "40.81.25.44";
 
 	public static int PORT = 25565;
 

@@ -9,7 +9,7 @@ namespace Mod.R
 {
     internal static class Strings
     {
-        internal static readonly string DEFAULT_IP_SERVERS = "nro:minebay.vn:25565:0:0:0";
+        internal static readonly string DEFAULT_IP_SERVERS = "nro:minebay.vn:25565:0:0:0,0,0";
         #region Fields
         internal static string communityMod = "";
         internal static string gameVersion = "";

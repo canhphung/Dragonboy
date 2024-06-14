@@ -34,9 +34,9 @@ public class ServerListScreen : mScreen, IActionListener
 
 	internal int lY;
 
-	public static string smartPhoneVN = "nro:minebay.vn:25565:0:0:0";
+	public static string smartPhoneVN = "nro:minebay.vn:25565:0:0:0,0,0";
 
-	public static string javaVN = "nro:minebay.vn:25565:0:0:0";
+	public static string javaVN = "nro:minebay.vn:25565:0:0:0,0,0";
 
 	public static string smartPhoneIn = "Naga:dragon.indonaga.com:14446:2:0:0,2,0";
 
